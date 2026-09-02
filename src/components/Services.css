@@ -1,0 +1,154 @@
+/* Services Section */
+.services {
+  background: #fefcf8;
+  padding: 5rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.services-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 4rem;
+  margin-top: 3rem;
+}
+
+.service-item {
+  padding: 2rem 2rem 2rem 0;
+  border-left: 2px solid #9ba98f;
+  padding-left: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.service-item:hover {
+  border-left-color: #1a1a1a;
+}
+
+.service-number {
+  font-family: "Georgia", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #9ba98f;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.service-item:hover .service-number {
+  color: #1a1a1a;
+}
+
+.service-title {
+  font-family: "Georgia", serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #1a1a1a;
+  margin: 0 0 1rem 0;
+}
+
+.service-description {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.service-line {
+  display: none;
+}
+
+.service-item:hover .service-line {
+  display: block;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  width: 50px;
+  height: 1px;
+  background: #9ba98f;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 4rem 1.5rem;
+  }
+
+  .services-grid {
+    gap: 2rem;
+  }
+
+  .service-item {
+    padding: 1.5rem 0 1.5rem 1.5rem;
+    border-left: 2px solid #9ba98f;
+  }
+
+  .service-number {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-title {
+    font-size: 1.1rem;
+  }
+
+  .service-description {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    padding: 3rem 1rem;
+    min-height: auto;
+  }
+
+  .service-item {
+    padding: 1.5rem 0 1.5rem 1.2rem;
+  }
+
+  .service-number {
+    font-size: 1.5rem;
+  }
+
+  .service-title {
+    font-size: 0.95rem;
+  }
+
+  .service-description {
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+  }
+}

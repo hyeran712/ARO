@@ -1,0 +1,207 @@
+/* Wedding Types Section */
+.wedding-types {
+  background: #f5f1ed;
+  padding: 5rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wedding-types-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #9ba98f;
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.section-title {
+  font-family: "Georgia", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+  margin: 0 0 3rem 0;
+  line-height: 1.2;
+}
+
+.wedding-types-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.wedding-type-card {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  cursor: pointer;
+  group: hover;
+}
+
+.wedding-type-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.6s ease;
+}
+
+.wedding-type-card:hover .wedding-type-image {
+  transform: scale(1.05);
+}
+
+.wedding-type-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(26, 26, 26, 0.9), transparent);
+  padding: 2rem;
+  color: #ffffff;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.wedding-type-card:hover .wedding-type-content {
+  transform: translateY(0);
+}
+
+.wedding-type-content h3 {
+  font-family: "Georgia", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0 0 0.5rem 0;
+}
+
+.wedding-type-content p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.wedding-types-button {
+  text-align: center;
+}
+
+/* Reuse button styles from Hero */
+.btn {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 1rem 2.5rem;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: #9ba98f;
+  color: #ffffff;
+  border: 2px solid #9ba98f;
+}
+
+.btn-primary:hover {
+  background: rgba(155, 169, 143, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(155, 169, 143, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .wedding-types-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .wedding-type-card {
+    height: 350px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wedding-types {
+    padding: 4rem 1.5rem;
+  }
+
+  .wedding-types-grid {
+    gap: 1.5rem;
+  }
+
+  .wedding-type-card {
+    height: 300px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .wedding-type-content {
+    padding: 1.5rem;
+  }
+
+  .wedding-type-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .wedding-type-content p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wedding-types {
+    padding: 3rem 1rem;
+    min-height: auto;
+  }
+
+  .wedding-type-card {
+    height: 250px;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .wedding-type-content {
+    padding: 1rem;
+  }
+
+  .wedding-type-content h3 {
+    font-size: 1rem;
+  }
+
+  .wedding-type-content p {
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;
+  }
+}

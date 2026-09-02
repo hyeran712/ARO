@@ -1,0 +1,150 @@
+/* Wedding Portfolio Section */
+.wedding-portfolio {
+  background: #f5f1ed;
+  padding: 5rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wedding-portfolio-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.wedding-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.wedding-portfolio-item {
+  position: relative;
+  overflow: hidden;
+  group: hover;
+  cursor: pointer;
+}
+
+.wedding-portfolio-image {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.wedding-portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 26, 26, 0);
+  transition: background 0.4s ease;
+}
+
+.wedding-portfolio-item:hover .wedding-portfolio-overlay {
+  background: rgba(26, 26, 26, 0.4);
+}
+
+.wedding-portfolio-content {
+  padding: 2rem 1rem;
+  background: #ffffff;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.wedding-portfolio-item:hover .wedding-portfolio-content {
+  background: #f5f1ed;
+}
+
+.wedding-type {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #9ba98f;
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
+}
+
+.wedding-title {
+  font-family: "Georgia", serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+}
+
+.wedding-location {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: #6a6a6a;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .wedding-portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wedding-portfolio {
+    padding: 4rem 1.5rem;
+  }
+
+  .wedding-portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wedding-title {
+    font-size: 1.1rem;
+  }
+
+  .wedding-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wedding-portfolio {
+    padding: 3rem 1rem;
+    min-height: auto;
+  }
+
+  .wedding-title {
+    font-size: 1rem;
+  }
+
+  .wedding-type {
+    font-size: 0.65rem;
+  }
+
+  .wedding-location {
+    font-size: 0.75rem;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .section-label {
+    font-size: 0.7rem;
+  }
+}

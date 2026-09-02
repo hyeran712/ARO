@@ -1,0 +1,168 @@
+/* Brand Story Section */
+.brand-story {
+  background: #fefcf8;
+  padding: 5rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.brand-story-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.brand-story-image {
+  position: relative;
+  overflow: hidden;
+  height: 600px;
+}
+
+.brand-story-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.8s ease;
+}
+
+.brand-story-image:hover .brand-story-img {
+  transform: scale(1.05);
+}
+
+.brand-story-content {
+  padding: 2rem 0;
+}
+
+.brand-story-label {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #9ba98f;
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.brand-story-title {
+  font-family: "Georgia", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+  margin: 0 0 2rem 0;
+  line-height: 1.2;
+}
+
+.brand-story-text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #4a4a4a;
+  margin: 0 0 1.5rem 0;
+}
+
+.brand-story-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(155, 169, 143, 0.3);
+}
+
+.highlight-item h3 {
+  font-family: "Georgia", serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  margin: 0 0 0.5rem 0;
+}
+
+.highlight-item p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.85rem;
+  color: #6a6a6a;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .brand-story-container {
+    gap: 3rem;
+  }
+
+  .brand-story-image {
+    height: 400px;
+  }
+
+  .brand-story-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-story {
+    padding: 4rem 1.5rem;
+  }
+
+  .brand-story-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .brand-story-image {
+    height: 350px;
+  }
+
+  .brand-story-title {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .brand-story-label {
+    font-size: 0.7rem;
+  }
+
+  .brand-story-text {
+    font-size: 0.9rem;
+  }
+
+  .brand-story-highlights {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-story {
+    padding: 3rem 1rem;
+    min-height: auto;
+  }
+
+  .brand-story-image {
+    height: 300px;
+  }
+
+  .brand-story-title {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .brand-story-text {
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+
+  .highlight-item h3 {
+    font-size: 0.95rem;
+  }
+
+  .highlight-item p {
+    font-size: 0.75rem;
+  }
+}
